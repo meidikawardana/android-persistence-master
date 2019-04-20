@@ -56,13 +56,7 @@ public class BooksBorrowedByUserActivity extends AppCompatActivity {
     }
 
     private void subscribeUiBooks() {
-        // TODO: refresh the list of books when there's new data
-        mViewModel.books.observe(this, new Observer<List<Book>>() {
-            @Override
-            public void onChanged(@NonNull final List<Book> books) {
-                showBooksInUi(books);
-            }
-        });
+        mViewModel.books.observe(this, books -> showBooksInUi(books));
     }
 
     @SuppressWarnings("unused")

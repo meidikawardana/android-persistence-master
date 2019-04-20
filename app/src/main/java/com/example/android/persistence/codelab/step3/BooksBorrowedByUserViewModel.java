@@ -38,9 +38,7 @@ public class BooksBorrowedByUserViewModel extends AndroidViewModel {
         super(application);
         createDb();
 
-        // TODO: Assign books to the 'findBooksBorrowedByName' query.
         books = mDb.bookModel().findBooksBorrowedByName("Mike");
-//        books = null;
     }
 
     public void createDb() {
