@@ -16,7 +16,7 @@
 
 package com.example.android.persistence.codelab.db;
 
-import android.arch.persistence.room.TypeConverter;
+import androidx.room.TypeConverter;
 
 import java.util.Date;
 
